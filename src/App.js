@@ -9,7 +9,7 @@ import Favoritos from "./views/Favoritos";
 import { useEffect, useState } from "react";
 
 export default function App() {
-  const endpoint = "./galeriaImagenes/fotos.json";
+  const endpoint = "./fotos.json";
   const [gallery, setGallery] = useState([]);
   const [fav, setFav] = useState([]);
   const [heart , setHeart] = useState({});
