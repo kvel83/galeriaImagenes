@@ -1,4 +1,5 @@
 {
+  "homepage":"https://kvel83.github.io/galeriaImagenes",
   "name": "desafio-natural-pic",
   "version": "1.0.0",
   "description": "",
@@ -14,13 +15,16 @@
   },
   "devDependencies": {
     "@babel/runtime": "7.13.8",
+    "gh-pages": "^5.0.0",
     "typescript": "4.1.3"
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     ">0.2%",
